@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+video{
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 100%;
+}
+
+.bg-white{
+    height: 50vh;
+    background: white;
+}
+p{
+    
+    font-size: 50px;
+   
+    
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+.bg-name{
+    
+    position: absolute;
+    top: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: #000;
+    height: 14vh;
+    font-weight: bold;
+    text-align: center;
+    line-height: var(--center-line);
+    mix-blend-mode: screen;
+    padding:0;
+    letter-spacing: 15px;
+    font-family: 'Staatliches', cursive;
+}
+h1{
+    font-size: 15vh;
+}
+.bg-acc{
+    background-color: transparent;
+    height: 50vh;
+    width: 100%;
+}
+
+/* scroll down */
+
+
+
+ .scroll1{
+    left: 50%;
+    transform: translateY(0%) rotate(45deg);
+    width: 2em; height: 2em; background-color: transparent; z-index: 80; 
+            bottom: 5vh; position: absolute; border-width: 0 0.25em 0.25em 0; border-style: solid; border-color: rgb(0, 0, 0); animation: scrolldown 1.2s ease-in-out infinite 0.15s;
+
+  }
+  .scroll2{
+    left: 50%;
+    transform: translateY(0%) rotate(45deg);
+    width: 2em; height: 2em; background-color: transparent; z-index: 80; 
+    bottom: 8vh; position: absolute; border-width: 0 0.25em 0.25em 0; border-style: solid; border-color: rgb(0, 0, 0); animation: scrolldown 1.2s ease-in-out infinite;
+  }
+ 
+  @keyframes scrolldown {
+    0%{
+        transform: translateY(20%) rotate(45deg);
+        opacity: 0.7;
+    }
+    50%{
+        transform: translateY(0%) rotate(45deg);
+        opacity: 0.2;
+    }
+    100%{
+        transform: translateY(20%) rotate(45deg);
+        opacity: 0.7;
+    }
+}
+
+.acc_img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    padding: 2%;
+    background-color: white;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.left ul li{
+    list-style: none;
+    font-size: 25px;
+    padding: 5%;
+    color: rgb(63, 100, 86);
+    font-weight: bold;
+}
+.left{
+    margin-right: 5%;
+}
+.mail{
+    position: relative;
+    text-align: center;
+    font-size: 1.6em;
+}
+.white{
+    color: white;
+}
+.full_height_acc{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white; 
+}
+.languages{
+    margin-bottom: 30px;
+    width: 80%;
+    background-color: white;
+  
+}
+.flex2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+}
+.flex{
+    background-image: url('../../img/bles.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .bg-image{
+        height: 100vh;
+    }
+    .bg-white{
+        height: 0vh;
+        background: white;
+    }
+    p{
+        
+        font-size: 50px;
+       
+        
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+    .bg-name{
+       
+        
+            
+        
+        position: absolute;
+      
+        background-color: white;
+        color: #000;
+       
+        font-weight: bold;
+ 
+        line-height: var(--center-line);
+        mix-blend-mode: screen;
+        padding:0;
+        letter-spacing: 15px;
+        font-family: 'Staatliches', cursive;
+        height: auto;
+        top: 40%;
+        bottom: 40%;
+        font-size: 2rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .bg-acc{
+        background-color: transparent;
+        height: 50vh;
+        width: 100%;
+    }
+    .scroll1{
+        left: 46%;
+        transform: translateY(0%) rotate(45deg);
+        width: 2em; height: 2em; background-color: transparent; z-index: 80; 
+                top: 60vh; position: absolute; border-width: 0 0.25em 0.25em 0; border-style: solid; border-color: rgb(0, 0, 0); animation: scrolldown 1.2s ease-in-out infinite 0.15s;
+    
+      }
+      .scroll2{
+        left: 46%;
+        transform: translateY(0%) rotate(45deg);
+        width: 2em; height: 2em; background-color: transparent; z-index: 80; 
+        top: 57vh; position: absolute; border-width: 0 0.25em 0.25em 0; border-style: solid; border-color: rgb(0, 0, 0); animation: scrolldown 1.2s ease-in-out infinite;
+      }
+     
+      @keyframes scrolldown {
+        0%{
+            transform: translateY(20%) rotate(45deg);
+            opacity: 0.7;
+        }
+        50%{
+            transform: translateY(0%) rotate(45deg);
+            opacity: 0.2;
+        }
+        100%{
+            transform: translateY(20%) rotate(45deg);
+            opacity: 0.7;
+        }
+    }
+    .flex2{
+        
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: white;
+    }
+    .full_height_acc{
+        height: auto;
+        margin-top: 15vh;
+    }
+}
