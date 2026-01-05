@@ -1,0 +1,252 @@
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+}
+.container_class {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  vertical-align: center;
+  max-width: 80vw !important;
+}
+
+.card-container {
+  position: relative;
+}
+.cards {
+  position: absolute;
+  display: flex;
+}
+.card-app {
+  position: relative;
+  border: 1px solid black;
+  border-radius: 3px;
+  object-fit: fit-content;
+  display: flex;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-app-big {
+  margin: 0 auto;
+}
+.flex {
+  display: block;
+  text-align: center;
+}
+.left {
+  display: block;
+  cursor: pointer;
+
+  transform: rotate(180deg);
+}
+.left img,
+.right img {
+  filter: invert(100%);
+}
+.right {
+  margin-right: 5px;
+
+  display: block;
+  cursor: pointer;
+}
+.down_img {
+  width: 15px !important;
+  height: 15px !important;
+  position: absolute;
+
+  transform: scale(50%) rotate(90deg);
+  bottom: 25px;
+  right: 50px;
+
+  object-fit: contain;
+
+  transform: rotate(90deg);
+}
+.left span,
+.right span {
+  display: block;
+}
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.card-app img {
+  height: 100%;
+  object-fit: cover;
+}
+.card-app {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0;
+  margin: 0;
+}
+.card-app .title {
+  display: flex;
+  height: 50px;
+  position: relative;
+  justify-content: center;
+
+  background-color: black;
+  opacity: 0.8;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+header {
+  background-color: #5d5f5e;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+  font-family: "Staatliches", cursive;
+}
+
+.main_formation li {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+
+  position: relative;
+}
+
+.main_formation .job-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+.flex-center {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: center;
+  align-items: center;
+  height: 100%;
+  width: 75%;
+  gap: 30px;
+  font-size: 3rem;
+}
+.main_formation .job-duration {
+  font-style: italic;
+  color: #777;
+}
+.main_formation .highlight {
+  font-weight: bold;
+  font-size: 1.2em !important;
+  color: #5d5f5e !important;
+  font-family: "Staatliches", cursive;
+}
+.main_formation {
+  padding: 0;
+  margin: 0;
+
+  overflow-y: scroll;
+}
+.section_dates {
+  width: 550px;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.section_dates::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  margin-top: -15px;
+  position: absolute;
+}
+.section_dates::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  margin-left: calc(100% - 50px);
+}
+.main_formation .container {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+.main_formation span {
+  font-size: 1.5em;
+}
+@media screen and (max-width: 1200px) {
+  .left span,
+  .right span {
+    height: 18px;
+  }
+  .body {
+    width: 95vw;
+  }
+  .card-app .title {
+    display: flex;
+    height: 25px;
+    position: relative;
+    justify-content: center;
+
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    line-height: 25px;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .section_dates {
+    width: 510px;
+    font-size: 0.6em !important;
+  }
+  header h1 {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  .down_img {
+    transform: scale(50%) rotate(90deg);
+    bottom: 5px;
+    right: 15px;
+  }
+  .left img,
+  .right img {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .down_img {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .section_dates {
+    width: 320px;
+  }
+  .flex-center {
+    font-size: 1.5rem;
+  }
+}

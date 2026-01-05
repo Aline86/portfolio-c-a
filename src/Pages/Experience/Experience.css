@@ -1,87 +1,69 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-
-h4{
-    font-size: 1.6em;
+h4 {
+  font-size: 1.6em;
 }
-.bigger{
-    font-size: 1.2em;
+.bigger {
+  font-size: 1.2em;
 }
 
-.control-arrow{
-    background-color: black!important;
+.control-arrow {
+  background-color: black !important;
+  opacity: 0.8;
+}
+
+.first_exp,
+.ex_pro,
+.internship {
+  padding: 5%;
+}
+.col {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title_exp {
+  font-size: 1.3em !important;
+}
+@media only screen and (max-width: 1200px) {
+  h4 {
+    font-size: 1em;
+  }
+
+  .bigger {
+    font-size: 1.1em;
+  }
+
+  .control-arrow {
+    background-color: black !important;
     opacity: 0.8;
-}
+  }
 
-.first_exp, .ex_pro, .internship{
-    padding: 5%;
-   
-}
-.col{
+  .first_exp,
+  .ex_pro,
+  .internship {
+    padding: 0.5%;
+  }
+  .col {
     height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.header_page_exp{
-    background-color: white;
-    height: auto;
-    margin: 0 auto;
-    width: 80vw;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-  
-}
-.title_exp{
-    font-size: 1.3em!important;
-}
-@media only screen and (max-width: 1250px) {
-    h4{
-        font-size: 1.5em;
-    }
-    
-    .bigger{
-        font-size: 1.4em;
-    }
-    
-    .control-arrow{
-        background-color: black!important;
-        opacity: 0.8;
-    }
-    
-    .first_exp, .ex_pro, .internship{
-        padding: .5%;
-       
-    }
-    .col{
-        height: 100%;
-        padding-left: 10%;
-        padding-right: 10%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .slider-wrapper{
-        width: 82vw!important;
-    }
-    .header_page_exp{
-        background-color: white;
-        height: auto;
-        margin: 0 auto;
-        width: 80vw;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-       padding-left: 1%;
-       padding-right: 1%;
-    }
-
+  }
+  .slider-wrapper {
+    width: 82vw !important;
+  }
+  .header_page_exp_ {
+    position: fixed;
+    top: 50px;
+  }
 }
