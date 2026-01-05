@@ -46,9 +46,7 @@
     transform: rotate(360deg);
   }
 }
-.full_width {
-  width: 100%;
-}
+
 .full_h {
   margin-bottom: 0 !important;
   background: url("./img/bles.jpg");
