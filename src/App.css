@@ -8,6 +8,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+body {
+  overflow-x: hidden;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

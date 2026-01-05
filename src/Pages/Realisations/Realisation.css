@@ -1,6 +1,7 @@
 .full_width {
   width: 100%;
   height: auto;
+  overflow-x: hidden;
 }
 .bg {
   background: url("../../img/feather.jpg");
@@ -9,6 +10,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
+  height: 100%;
+  width: 100%;
 
   color: rgb(245, 243, 243);
 }
