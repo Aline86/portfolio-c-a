@@ -244,7 +244,7 @@ header h1 {
 }
 @media screen and (max-width: 800px) {
   .section_dates {
-    width: 320px;
+    width: 290px;
   }
   .flex-center {
     font-size: 1.5rem;
