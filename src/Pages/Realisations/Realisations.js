@@ -40,9 +40,9 @@ export default function Realisations(props) {
                   </div>
                   <div>
                     <h3>
-                      Exemple de création d'un environnement docker - site de
-                      réservation de rendez-vous - LARAVEL 8 - projet étudiant
-                      de 2021
+                      Exemple de création d'un environnement docker sur un vieux
+                      projet - site de réservation de rendez-vous - LARAVEL 8 -
+                      projet étudiant de 2021
                     </h3>
                     <br />
                   </div>
