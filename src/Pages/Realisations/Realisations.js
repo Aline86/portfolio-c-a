@@ -57,7 +57,7 @@ export default function Realisations(props) {
                       au niveau BDD, Dockerfile pour adapter l'image officielle
                       de Laravel en fonction des besoins du projet etc) -
                       Laravel / JS - Ajax - PHP - CSS / Tous les calendriers (FO
-                      et BO) A l'époque es calendriers ont été codés à la main
+                      et BO) A l'époque les calendriers ont été codés à la main
                       en Javascript - il ne s'agit pas de plugins -
                     </h4>
                     <br />
@@ -71,6 +71,20 @@ export default function Realisations(props) {
                       href="https://github.com/Aline86/docker"
                     >
                       Voir le code d'un docker de développement
+                    </a>
+                  </div>
+                  <br />
+                  <br />
+                  <div data-aos="fade-left" data-aos-id="super-duper">
+                    <a
+                      href="https://github.com/Aline86/memory_java"
+                      target="_blank"
+                    >
+                      <img
+                        className="full_width"
+                        alt="réservation rendez-vous"
+                        src={resa}
+                      />
                     </a>
                   </div>
                 </>
@@ -114,6 +128,32 @@ export default function Realisations(props) {
                       calendars were hand-coded in JavaScript — they are not
                       plugins.
                     </h4>
+                  </div>
+                  <br />
+                  <br />
+                  <div data-aos="fade-left" data-aos-id="super-duper">
+                    <a
+                      href="https://github.com/Aline86/memory_java"
+                      target="_blank"
+                    >
+                      <img
+                        className="full_width"
+                        alt="réservation rendez-vous"
+                        src={resa}
+                      />
+                    </a>
+                  </div>
+                  <div data-aos="fade-left" data-aos-id="super-duper">
+                    <a
+                      href="https://github.com/Aline86/memory_java"
+                      target="_blank"
+                    >
+                      <img
+                        className="full_width"
+                        alt="réservation rendez-vous"
+                        src={resa}
+                      />
+                    </a>
                   </div>
                 </>
               )}
@@ -189,19 +229,6 @@ export default function Realisations(props) {
             </div>
 
             <div>
-              <div data-aos="fade-left" data-aos-id="super-duper">
-                <a
-                  href="https://github.com/Aline86/memory_java"
-                  target="_blank"
-                >
-                  <img
-                    className="full_width"
-                    alt="réservation rendez-vous"
-                    src={resa}
-                  />
-                </a>
-              </div>
-
               <div>
                 <h2>
                   {fr
