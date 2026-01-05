@@ -1,13 +1,13 @@
 import { useEffect, useState, useRef } from "react";
 import "./styles/global.css";
 import CarouselContainer from "./CarouselContainer";
-import Card_1 from "./Card_1";
-import Card_2 from "./Card_2";
+import Card_1 from "./Card1";
+import Card_2 from "./Card2";
 export function Carousel({ width, height, gap, cardNumber }) {
   const [colors, setColors] = useState([<Card_1 />, <Card_2 />]);
 
   const [transitionFinished, setTransitionFinished] = useState(false);
-  const [cardWidth, setCardWidth] = useState(0);
+
   const cardRef = useRef();
   const [clic, setIsClic] = useState(false);
   const result = window.matchMedia("(max-width: 1200px)");
@@ -26,17 +26,6 @@ export function Carousel({ width, height, gap, cardNumber }) {
         setIsClic(false);
       }
     });
-  }
-
-  function updateCardRef() {
-    const cardWidth = cardRef.current?.clientWidth;
-    if (cardWidth !== undefined) {
-      if (result.matches) {
-        setCardWidth(cardWidth);
-      } else {
-        setCardWidth(cardWidth);
-      }
-    }
   }
 
   function updateTransitionState(state) {
@@ -62,8 +51,6 @@ export function Carousel({ width, height, gap, cardNumber }) {
             colors={colors}
             transitionFinished={transitionFinished}
             updateTransitionState={updateTransitionState}
-            cardWidth={cardWidth}
-            updateCardRef={updateCardRef}
             cardRef={cardRef}
             setIsClic={setIsClic}
             setCardValue={setCardValue}

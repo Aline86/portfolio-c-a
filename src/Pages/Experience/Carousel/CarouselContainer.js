@@ -6,8 +6,7 @@ import fleche from "./img/fleche.png";
 function CarouselContainer({
   colors,
   transitionFinished,
-  cardWidth,
-  updateCardRef,
+
   cardRef,
   updateTransitionState,
   updateColors,
@@ -24,8 +23,8 @@ function CarouselContainer({
   const [trigger, setTrigger] = useState(0);
   const [move, setMove] = useState(0);
   const [isLeft, setIsLeft] = useState(true);
-
-  const [card, setCard] = useState(colors[2]);
+  const [cardWidth, setCardWidth] = useState(0);
+  const [, setCard] = useState(colors[2]);
 
   const result = window.matchMedia("(max-width: 1200px)");
 
@@ -41,8 +40,6 @@ function CarouselContainer({
 
       updateTransitionState(true);
     }
-
-    //
   }
 
   function updateTransitionLeft() {
@@ -62,6 +59,16 @@ function CarouselContainer({
       updateColors(colors);
 
       updateTransitionState(true);
+    }
+  }
+  function updateCardRef() {
+    const cardWidth = cardRef.current?.clientWidth;
+    if (cardWidth !== undefined) {
+      if (result.matches) {
+        setCardWidth(cardWidth);
+      } else {
+        setCardWidth(cardWidth);
+      }
     }
   }
 

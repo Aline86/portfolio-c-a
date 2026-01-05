@@ -37,8 +37,8 @@ export default function Experience(props) {
                   <Carousel
                     key={refreshKey} // ← La clé force le remount complet
                     height={70}
-                    width={82}
-                    gap={10}
+                    width={80}
+                    gap={30}
                     cardNumber={2}
                   />
                 </div>

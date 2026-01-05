@@ -6,7 +6,7 @@ function Card_1() {
   return (
     <main class="main_formation">
       <header>
-        <h1> {fr ? "Expérience Web" : "Web experience"} - </h1>
+        <h1> {fr ? "Expérience Web" : "Web experience"}</h1>
       </header>
       <section class="center_text">
         <section>
