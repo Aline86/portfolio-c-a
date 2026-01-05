@@ -126,12 +126,13 @@ h2 {
   margin-right: 5%;
 }
 .mail {
-  position: relative;
   text-align: center;
   font-size: 1.6em;
 }
+
 .white {
   color: white;
+  position: relative;
 }
 .full_height_acc {
   height: 100vh;
@@ -258,6 +259,9 @@ h2 {
   .full_height_acc {
     height: auto;
     margin-top: 10vh;
+  }
+  .container_small {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 700px) {
