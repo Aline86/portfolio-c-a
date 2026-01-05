@@ -57,8 +57,8 @@ export default function Realisations(props) {
                       au niveau BDD, Dockerfile pour adapter l'image officielle
                       de Laravel en fonction des besoins du projet etc) -
                       Laravel / JS - Ajax - PHP - CSS / Tous les calendriers (FO
-                      et BO) A l'époque les calendriers ont été codés à la main
-                      en Javascript - il ne s'agit pas de plugins -
+                      et BO) ont été codés à l'époque à la main en Javascript -
+                      il ne s'agit pas de plugins -
                     </h4>
                     <br />
                   </div>
