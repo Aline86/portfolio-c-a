@@ -4,26 +4,25 @@ import { Carousel } from "./Carousel/Carousel";
 
 export default function Experience(props) {
   const [refreshKey, setRefreshKey] = useState(0);
-  const [isLoaded, setIsLoaded] = useState(false);
 
+  const result = window.matchMedia("(max-width: 700px)");
+  const [isLoaded, setIsLoaded] = useState(false);
   const setLoading = () => {
     setIsLoaded(true);
     props.hideLoader();
   };
 
   useEffect(() => {
+    setLoading();
     function handleResize() {
       setRefreshKey((prev) => prev + 1);
     }
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  useEffect(() => {
-    setLoading();
+    if (!result.matches) {
+      window.addEventListener("resize", handleResize);
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
   }, []);
 
   return (

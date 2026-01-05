@@ -100,4 +100,10 @@
     border-radius: 15px;
     box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.3);
   }
+  [data-aos="fade-left"] {
+    animation: none !important;
+  }
+  [data-aos="fade-right"] {
+    animation: none !important;
+  }
 }
