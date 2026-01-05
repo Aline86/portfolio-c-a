@@ -234,8 +234,8 @@ export default function Realisations(props) {
                 </h2>
                 <h4 className="small">
                   {fr
-                    ? "Voici deux exemples d'utilisation :"
-                    : "Here are two examples of how it can be used :"}
+                    ? "Sites configurables en production. Conception et développement de sites configurables et personnalisables. Architecture frontend / backend découplée. Déploiement et maintenance en production. Un site est utilisé par une association. Voici deux exemples d'utilisation :"
+                    : "Configurable websites in production. Design and development of configurable and customizable websites. Decoupled frontend/backend architecture. Deployment and maintenance in production. One website is used by a non-profit association. Here are two examples of use: :"}
                 </h4>
 
                 <br />
