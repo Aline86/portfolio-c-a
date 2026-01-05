@@ -257,6 +257,12 @@ h2 {
   }
   .full_height_acc {
     height: auto;
-    margin-top: 15vh;
+    margin-top: 10vh;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .full_height_acc {
+    height: auto;
+    margin-top: 50px;
   }
 }

@@ -249,4 +249,10 @@ header h1 {
   .flex-center {
     font-size: 1.5rem;
   }
+  .section_dates::before {
+    display: none;
+  }
+  .section_dates::after {
+    display: none;
+  }
 }
